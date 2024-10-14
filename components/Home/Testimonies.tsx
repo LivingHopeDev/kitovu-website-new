@@ -13,9 +13,9 @@ const Testimonies = () => {
         is why we are passionately dedicated to supporting smallholder farmers!
       </p>
 
-      <div className="w-full max-w-lg aspect-square">
+      <div className="w-full max-w-lg aspect-square ">
         <iframe
-          className="w-full h-full"
+          className="w-full h-full rounded-2xl"
           src="https://youtube.com/embed/Yu40JarwBSE"
           title="YouTube video player"
           frameBorder="0"
