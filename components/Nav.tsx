@@ -68,9 +68,9 @@ const Nav = () => {
           height={140}
         />
       </div>
-      <div className="hidden sm:block ">
+      <div className="hidden md:block ">
         <NavigationMenu>
-          <NavigationMenuList className="flex justify-between items-center space-x-5 gap-4 border-">
+          <NavigationMenuList className="flex justify-between items-center space-x-5 gap-4">
             {nav.map((item) => (
               <NavigationMenuItem key={item.id} className="nav_text">
                 {item.dropdown ? (
@@ -107,14 +107,14 @@ const Nav = () => {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div className="hidden sm:flex sm:space-x-3 sm:items-center">
+      <div className="hidden md:flex md:space-x-3 md:items-center">
         <button>
           <Link href="#">
             <p className="contact_btn">Contact Us</p>
           </Link>
         </button>
       </div>
-      <div className="sm:hidden">
+      <div className="md:hidden">
         <img
           src={showModal ? iconClose : hamburger}
           alt="menu-icon"
