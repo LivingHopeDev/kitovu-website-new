@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = () => {
   return (
     <header className="relative flex bg-[url('/assets/images/hero.png')] bg-cover bg-center bg-no-repeat w-screen h-screen">
