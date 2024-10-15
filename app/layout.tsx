@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 // import "./globals.css";
 import "../styles/custom.css";
 import "./globals.css";
-import { siteConfig } from "@/constant/config";
+// import { siteConfig } from "@/constant/config";
 import Nav from "@components/Nav";
 
 // export const metadata: Metadata = {
