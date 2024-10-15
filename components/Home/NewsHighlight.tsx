@@ -2,9 +2,9 @@ import NewsCard from "@components/Cards/NewsCard";
 
 export interface newsInterface {
   id: number;
-  date: String;
-  title: String;
-  content: String;
+  date: string;
+  title: string;
+  content: string;
   link: string;
 }
 const news: newsInterface[] = [
