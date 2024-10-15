@@ -114,7 +114,7 @@ const Nav = () => {
         </button>
       </div>
       <div className="md:hidden">
-        <img
+        <Image
           src={showModal ? iconClose : hamburger}
           alt="menu-icon"
           onClick={handleModalChange}
