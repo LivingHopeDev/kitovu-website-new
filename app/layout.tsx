@@ -4,6 +4,7 @@ import "../styles/custom.css";
 import "./globals.css";
 import { siteConfig } from "@/constant/config";
 import Nav from "@components/Nav";
+import Footer from "@components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -46,6 +47,7 @@ export default function RootLayout({
         <main className="app">
           <Nav />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
