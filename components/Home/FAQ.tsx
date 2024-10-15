@@ -41,7 +41,7 @@ const FAQ = () => {
           <>
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-2xl">
+                <AccordionTrigger className="text-2xl text-black">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-lg text-[var(--nav-color)]">
