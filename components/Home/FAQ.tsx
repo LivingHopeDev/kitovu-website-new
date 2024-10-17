@@ -29,7 +29,7 @@ const FAQ = () => {
     <section className=" max-w-[40rem] my-10">
       <div className="flex flex-col gap-6 items-center w-full">
         <h2 className="text-2xl md:text-4xl">Frequently Asked Qustions</h2>
-        <p className="text-center tracking-tighter md:tracking-wider max-w-3xl text-md mb-10">
+        <p className="text-center tracking-tighter md:tracking-normal max-w-3xl text-md mb-10">
           Dive into our Frequently Asked Questions to understand Semihuman
           better, discover our guarantee, and see how we can elevate your
           content endeavors.
@@ -41,10 +41,10 @@ const FAQ = () => {
           <>
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-2xl text-black">
+                <AccordionTrigger className="text-xl md:text-2xl text-black">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-lg text-[var(--nav-color)]">
+                <AccordionContent className="text-md md:text-lg text-[var(--nav-color)]">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
