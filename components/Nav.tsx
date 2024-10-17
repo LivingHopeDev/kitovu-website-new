@@ -24,7 +24,7 @@ export interface NavItem {
   dropdown?: Array<{ name: string; link: string }>;
 }
 
-const nav: NavItem[] = [
+export const nav: NavItem[] = [
   {
     id: 1,
     name: "Home",
@@ -37,7 +37,7 @@ const nav: NavItem[] = [
   },
   {
     id: 3,
-    name: "Our Product",
+    name: "Our Products",
     link: "#",
   },
   {
