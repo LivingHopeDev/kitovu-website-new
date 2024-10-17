@@ -7,7 +7,7 @@ const teamMembers = [
     name: "John Doe",
     image: "/assets/images/member-1.svg",
     title: "Agriculture Expert",
-    description: "John has 10+ years of experience in sustainable farming.",
+    description: "Tayo has 10+ years of experience in sustainable farming.",
   },
   {
     id: 2,
