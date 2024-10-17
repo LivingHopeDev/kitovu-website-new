@@ -30,7 +30,9 @@ const Team = () => {
   return (
     <section className="flex flex-col mx-auto max-w-[90%] md:max-w-[80%] items-center my-10 space-y-8">
       <h1 className="text-2xl md:text-4xl font-semibold">Meet Our Team</h1>
-      <p className="text-justify">
+
+      {/* Paragraph and Team Cards in the same width */}
+      <p className="text-center w-full max-w-[80%] pb-4">
         Our team consists of agricultural experts, technologists, and innovators
         dedicated to driving positive change in agriculture. With a deep
         understanding of both farming and technology, we are uniquely positioned
@@ -39,7 +41,7 @@ const Team = () => {
       </p>
 
       {/* Team Cards */}
-      <div className="flex flex-col md:flex-row justify-center gap-8">
+      <div className="flex flex-col md:flex-row justify-center gap-8 w-full max-w-[80%]">
         {teamMembers.map((member) => (
           <div
             key={member.id}

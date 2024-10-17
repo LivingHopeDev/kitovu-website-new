@@ -27,7 +27,7 @@ export const info = [
 const HowItWorks = () => {
   return (
     <section className="bg-[#E5E5E54D] pb-10">
-      <div className="mx-auto max-w-[80%] pb-">
+      <div className="mx-auto max-w-[80%] ">
         <div className="flex justify-between py-[4rem]">
           <div className="w-1/2">
             <h4 className="text-[var(--primary-color)] font-semibold">
