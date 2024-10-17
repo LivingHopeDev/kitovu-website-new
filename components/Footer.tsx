@@ -15,13 +15,15 @@ import { useState } from "react";
 import LoadingSpinner from "./LoadingSpinner";
 
 const Footer = () => {
-  const [loading, setLoading] = useState();
+  const [loading, setLoading] = useState(false);
   const validation = Yup.object({
     email: Yup.string()
       .email("Invalid email address")
       .required("Email Required"),
   });
-  const onSubmit = () => {};
+  const onSubmit = () => {
+    setLoading(true);
+  };
   return (
     <footer className="footer text-white  w-screen">
       <div className="mx-auto px-4 md:px-8 lg:px-24 w-full z-[99] 2xl:max-w-[1600px] ">

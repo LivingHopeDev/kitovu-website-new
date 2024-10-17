@@ -28,17 +28,17 @@ export const nav: NavItem[] = [
   {
     id: 1,
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     id: 2,
     name: "About Us",
-    link: "#",
+    link: "/about-us",
   },
   {
     id: 3,
     name: "Our Products",
-    link: "#",
+    link: "/products",
   },
   {
     id: 4,
