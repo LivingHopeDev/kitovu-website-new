@@ -2,6 +2,7 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -37,7 +38,6 @@ const page = () => {
               <div className="text-[var(--orange-color)] text-sm leading-3 py-2 px-3.5  rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-16 md:right-8 lg:right-24">
                 YieldMax
               </div>
-
               <h1 className="text-header font-semibold text-2xl md:text-3xl lg:text-4xl mt-12">
                 Go digital and increase your yield by taking advantage of our
                 data-based platform.
@@ -46,16 +46,12 @@ const page = () => {
                 Receive insights regarding your farm’s health, beneficial tips,
                 and many more personalised agronomic advisory.
               </p>
-
-              <button
-                className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5"
-                onClick={() => {
-                  // navigate("/yield-max");
-                }}
-              >
-                <h1 className="text-[var(--orange-color)] ">Read more</h1>
-                <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
-              </button>
+              <Link href="/products/yieldmax">
+                <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
+                  <h1 className="text-[var(--orange-color)] ">Read more</h1>
+                  <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
+                </button>
+              </Link>
             </div>
 
             <div className="row-start-1 md:col-start-1 ml-0 md:ml-8 lg:ml-24 md:rounded-[20px] overflow-hidden">
@@ -83,15 +79,12 @@ const page = () => {
                 extend the shelf life of your product and convert them to
                 collateral assets to get loans to expand your farming business.
               </p>
-
-              <a
-                className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5"
-                href="https://www.storagex.com.ng/"
-                target="_blank"
-              >
-                <h1 className="text-[var(--orange-color)] ">Read more</h1>
-                <FaArrowRightLong className="text-[var(--orange-color)]" />
-              </a>
+              <Link href="/products/storageX">
+                <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
+                  <h1 className="text-[var(--orange-color)] ">Read more</h1>
+                  <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
+                </button>
+              </Link>
             </div>
 
             <div className="row-start-1 md:col-start-2 mr-0 md:mr-8 lg:mr-24 md:rounded-[20px] overflow-hidden">
@@ -123,15 +116,12 @@ const page = () => {
                 and whenever you want them.
               </p>
 
-              <button
-                className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5"
-                onClick={() => {
-                  // navigate("/e-procure");
-                }}
-              >
-                <h1 className="text-[var(--orange-color)] ">Read more</h1>
-                <FaArrowRightLong className="text-[var(--orange-color)]" />
-              </button>
+              <Link href="/products/eprocure">
+                <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
+                  <h1 className="text-[var(--orange-color)] ">Read more</h1>
+                  <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
+                </button>
+              </Link>
             </div>
 
             <div className="row-start-1 md:col-start-1 ml-0 md:ml-8 lg:ml-24 md:rounded-[20px] overflow-hidden">
@@ -158,16 +148,12 @@ const page = () => {
                 and selling farm produce. We will store your purchase properly
                 for you if needed, and sell it whenever you choose.
               </p>
-
-              <button
-                className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5"
-                onClick={() => {
-                  // navigate("/combo-trader");
-                }}
-              >
-                <h1 className="text-[var(--orange-color)] ">Read more</h1>
-                <FaArrowRightLong className="text-[var(--orange-color)]" />
-              </button>
+              <Link href="/products/comboTrader">
+                <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
+                  <h1 className="text-[var(--orange-color)] ">Read more</h1>
+                  <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
+                </button>
+              </Link>
             </div>
 
             <div className="row-start-1 md:col-start-2 mr-0 md:mr-8 lg:mr-24  relative">
