@@ -5,7 +5,7 @@ import { nav } from "./Nav";
 import { BsYoutube } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { FaX } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
+// import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsTelephone } from "react-icons/bs";
 import { BsEnvelope } from "react-icons/bs";
