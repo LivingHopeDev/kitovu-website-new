@@ -41,7 +41,9 @@ const news: newsInterface[] = [
 const NewsHighlight = () => {
   return (
     <section className="bg-[#E5E5E54D] flex flex-col items-center pt-10 my-10 space-y-10 w-screen pb-14">
-      <h2 className="text-2xl md:text-4xl">Keep up with the latest news</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold">
+        Keep up with the latest news
+      </h2>
 
       <p className="text-center tracking-tighter md:tracking-wider max-w-3xl text-md">
         Explore our blog for the latest updates, insights, and success stories

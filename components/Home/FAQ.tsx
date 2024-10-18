@@ -28,7 +28,9 @@ const FAQ = () => {
   return (
     <section className=" max-w-[40rem] my-10">
       <div className="flex flex-col gap-6 items-center w-full">
-        <h2 className="text-2xl md:text-4xl">Frequently Asked Qustions</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold">
+          Frequently Asked Qustions
+        </h2>
         <p className="text-center tracking-tighter md:tracking-normal max-w-3xl text-md mb-10">
           Dive into our Frequently Asked Questions to understand Semihuman
           better, discover our guarantee, and see how we can elevate your

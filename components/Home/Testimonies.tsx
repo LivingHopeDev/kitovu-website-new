@@ -3,7 +3,9 @@ import React from "react";
 const Testimonies = () => {
   return (
     <section className="flex flex-col items-center my-10 space-y-10 max-w-4xl">
-      <h2 className="text-2xl md:text-4xl">Farmer&apos;s Testimonies</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold">
+        Farmer&apos;s Testimonies
+      </h2>
 
       <p className="text-center tracking-tighter md:tracking-normal text-md">
         As we often say: by uplifting one farmer at a time, we move closer to
