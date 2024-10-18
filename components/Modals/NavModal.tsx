@@ -15,9 +15,14 @@ import {
 
 interface ModalProps {
   nav: NavItem[];
+  setShowModal: (value: boolean) => void;
 }
 
-export default function NavModal({ nav }: ModalProps) {
+export default function NavModal({ nav, setShowModal }: ModalProps) {
+  const handleLinkClick = () => {
+    console.log("i am been clicked");
+    setShowModal(false); // Close the modal when any link is clicked
+  };
   return (
     <>
       {/* Background Overlay */}
@@ -43,6 +48,7 @@ export default function NavModal({ nav }: ModalProps) {
                           <Link
                             href={dropdownItem.link}
                             className="block px-4 py-2 text-[1rem] nav_text transition-colors duration-500 ease-in-out"
+                            onClick={handleLinkClick} // Close modal on link click
                           >
                             {dropdownItem.name}
                           </Link>
@@ -52,7 +58,10 @@ export default function NavModal({ nav }: ModalProps) {
                   </DropdownMenu>
                 ) : (
                   item.link && (
-                    <Link href={item.link}>
+                    <Link
+                      href={item.link}
+                      onClick={handleLinkClick} // Close modal on link click
+                    >
                       <p className="text-lg font-medium flex items-center nav_text hover:text-[var(--primary-color)]">
                         {item.name}
                       </p>

@@ -121,7 +121,7 @@ const Nav = () => {
           className="cursor-pointer"
         />
       </div>
-      {showModal && <NavModal nav={nav} />}
+      {showModal && <NavModal nav={nav} setShowModal={setShowModal} />}
     </nav>
   );
 };
