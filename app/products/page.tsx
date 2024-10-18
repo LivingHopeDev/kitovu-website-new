@@ -157,8 +157,7 @@ const page = () => {
             </div>
 
             <div className="row-start-1 md:col-start-2 mr-0 md:mr-8 lg:mr-24  relative">
-              {/* <img src={imag1Adlib} className='absolute hidden md:flex left-[-57px] -top-[58px] z-[10px]' /> */}
-              {/* <img src={farm2}  /> */}
+             
               <div className="w-full md:rounded-[20px] overflow-hidden">
                 <Image
                   src="/assets/images/products/combo1.png"
