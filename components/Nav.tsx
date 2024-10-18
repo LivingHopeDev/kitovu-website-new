@@ -108,7 +108,7 @@ const Nav = () => {
       </div>
       <div className="hidden md:flex md:space-x-3 md:items-center">
         <button>
-          <Link href="#">
+          <Link href="/contact">
             <p className="contact_btn">Contact Us</p>
           </Link>
         </button>

@@ -26,7 +26,7 @@ const Agenda = () => {
           <div key={item.id}>
             <h1 className="text-4xl font-medium mb-4">{item.title}</h1>
             {item.content.split("\n\n").map((paragraph, index) => (
-              <p key={index} className="text-xl mb-4">
+              <p key={index} className="text-md mb-4">
                 {paragraph}
               </p>
             ))}

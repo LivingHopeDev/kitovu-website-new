@@ -67,7 +67,7 @@ export default function NavModal({ nav }: ModalProps) {
         {/* Contact Us Button */}
         <div className="mt-6">
           <button className="w-full">
-            <Link href="#">
+            <Link href="/contact">
               <p className="contact_btn">Contact Us</p>
             </Link>
           </button>

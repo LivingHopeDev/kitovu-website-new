@@ -37,7 +37,7 @@ const HowItWorks = () => {
               Simple Working Process
             </h2>
           </div>
-          <div className="w-1/2">
+          <div className="text-md w-1/2">
             Our support extends beyond smallholder farmers to encompass the
             entire agricultural value chain.
           </div>
@@ -51,8 +51,8 @@ const HowItWorks = () => {
               className="bg-white max-w-[20rem] border-[1px] border-gray-200 rounded-md p-4 flex flex-col items-start"
             >
               <Image src={item.image} alt={item.alt} width={40} height={40} />
-              <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
-              <p className="mt-2">{item.content}</p>
+              <h3 className="text-md font-semibold mt-4">{item.title}</h3>
+              <p className="text-sm mt-2">{item.content}</p>
             </div>
           ))}
         </div>

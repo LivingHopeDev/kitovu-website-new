@@ -37,7 +37,7 @@ const Footer = () => {
               width={120}
               height={120}
             />
-            <h1 className="font-semibold text-xl md:text-2xl text-white ">
+            <h1 className="font-semibold text-md md:text-2xl text-white ">
               Kitovu Technology Company
             </h1>
             <p className="text-white text-md">
@@ -69,13 +69,13 @@ const Footer = () => {
                 <FaX className="text-white w-4 h-4 font-" />
               </a>
 
-              <a
+              {/* <a
                 href="https://instagram.com/kitovu001 "
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <BsInstagram className="text-[#A30B0B] w-4 h-4" />
-              </a>
+              </a> */}
               <a
                 href="https://www.linkedin.com/company/kitovutechnologycompany"
                 target="_blank"
@@ -98,7 +98,7 @@ const Footer = () => {
                       <h1 className="text-white text-xl md:text-2xl">
                         Subscribe to our newsletter
                       </h1>
-                      <p className="text-white">
+                      <p className="text-white text-md">
                         Enter your email address to register to our newsletter
                         subscription.
                       </p>
