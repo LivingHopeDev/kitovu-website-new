@@ -1,13 +1,11 @@
 "use client";
-import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 const page = () => {
   return (
     <section>
-      <header className="relative flex bg-[url('/assets/images/productHero.svg')] bg-cover bg-center bg-no-repeat w-screen h-[20vh] lg:h-[50vh]">
+      <header className="relative flex bg-[url('/assets/images/aboutUs.svg')] bg-cover bg-center bg-no-repeat w-screen h-[20vh] lg:h-[50vh]">
         {/* Content */}
         <div className="relative z-20 flex flex-col justify-center items-center space-y-6 px-6 sm:px-10 lg:px-16 w-full">
           <h1 className="text-2xl md:text-4xl font-semibold text-white">
@@ -49,7 +47,7 @@ const page = () => {
               <Link href="/products/yieldmax">
                 <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
                   <h1 className="text-[var(--orange-color)] ">Read more</h1>
-                  <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
+                  {/* <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " /> */}
                 </button>
               </Link>
             </div>
@@ -82,7 +80,7 @@ const page = () => {
               <Link href="/products/storageX">
                 <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
                   <h1 className="text-[var(--orange-color)] ">Read more</h1>
-                  <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
+                  {/* <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " /> */}
                 </button>
               </Link>
             </div>
@@ -119,7 +117,7 @@ const page = () => {
               <Link href="/products/eprocure">
                 <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
                   <h1 className="text-[var(--orange-color)] ">Read more</h1>
-                  <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
+                  {/* <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " /> */}
                 </button>
               </Link>
             </div>
@@ -151,7 +149,7 @@ const page = () => {
               <Link href="/products/comboTrader">
                 <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
                   <h1 className="text-[var(--orange-color)] ">Read more</h1>
-                  <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
+                  {/* <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " /> */}
                 </button>
               </Link>
             </div>
