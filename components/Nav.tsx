@@ -60,12 +60,14 @@ const Nav = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white flex justify-between items-center md:px-10 px- py-10 w-full h-10">
       <div>
-        <Image
-          src="/assets/images/logo.svg"
-          alt="logo"
-          width={140}
-          height={140}
-        />
+        <Link href="/">
+          <Image
+            src="/assets/images/logo.svg"
+            alt="logo"
+            width={140}
+            height={140}
+          />
+        </Link>
       </div>
       <div className="hidden md:block ">
         <NavigationMenu>

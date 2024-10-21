@@ -20,7 +20,6 @@ interface ModalProps {
 
 export default function NavModal({ nav, setShowModal }: ModalProps) {
   const handleLinkClick = () => {
-    console.log("i am been clicked");
     setShowModal(false); // Close the modal when any link is clicked
   };
   return (

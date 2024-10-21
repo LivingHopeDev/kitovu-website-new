@@ -31,12 +31,15 @@ const Footer = () => {
           {/* Left Section - Logo, Social Links, and Newsletter */}
           <div className="flex flex-col gap-4 pb-4 mr-8">
             {/* Logo */}
-            <Image
-              src="/assets/images/logo.svg"
-              alt="logo"
-              width={120}
-              height={120}
-            />
+            <Link href="/">
+              <Image
+                src="/assets/images/logo.svg"
+                alt="logo"
+                width={120}
+                height={120}
+              />
+            </Link>
+
             <h1 className="font-semibold text-md md:text-2xl text-white ">
               Kitovu Technology Company
             </h1>
