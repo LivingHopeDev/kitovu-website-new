@@ -79,7 +79,7 @@ const page = () => {
                 extend the shelf life of your product and convert them to
                 collateral assets to get loans to expand your farming business.
               </p>
-              <Link href="/products/storageX">
+              <Link href="https://storagex.com.ng/" target="_blank">
                 <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
                   <h1 className="text-[var(--orange-color)] ">Read more</h1>
                   <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
@@ -148,7 +148,7 @@ const page = () => {
                 and selling farm produce. We will store your purchase properly
                 for you if needed, and sell it whenever you choose.
               </p>
-              <Link href="/products/comboTrader">
+              <Link href="https://combotrader.com.ng/" target="_blank">
                 <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
                   <h1 className="text-[var(--orange-color)] ">Read more</h1>
                   <FaArrowRightLong className="text-[var(--orange-color)] font-semibold " />
