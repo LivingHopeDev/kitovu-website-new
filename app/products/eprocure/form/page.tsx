@@ -299,3 +299,8 @@
 // };
 
 // export default page;
+
+const page = () => {
+  return <div>This is eprocure form page</div>;
+};
+export default page;
