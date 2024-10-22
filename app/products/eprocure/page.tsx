@@ -104,8 +104,8 @@ const page = () => {
               </div>
             </div>
           </section>
-          <section className="flex md:gap-10 items-stretch relative bg-[#F58A07] text-white max-h-[20rem]">
-            <div className="w-1/2 h-auto">
+          <section className="flex flex-col md:flex-row md:gap-10 items-stretch relative bg-[#F58A07] text-white max-h-[20rem]">
+            <div className="w-full md:w-1/2 h-auto hidden md:block">
               <Image
                 src="/assets/images/products/yield5.png"
                 alt="field image"
@@ -115,12 +115,12 @@ const page = () => {
               />
             </div>
 
-            <div className="w-1/2 py-14 flex flex-col gap-5 items-center md:items-start justify-center">
-              <h1 className="text-white text-2xl md:text-3xl lg:text-4xl text-left">
+            <div className="w-full md:w-1/2 py-6 md:py-14 flex flex-col gap-5 items-center md:items-start justify-center">
+              <h1 className="text-white text-xl md:text-3xl lg:text-4xl text-center md:text-left">
                 Sourcing and delivery of agricultural products made easy with
                 data-driven technology.
               </h1>
-              <div className="flex items-center md:items-start justify-center md:justify-start">
+              <div className="flex items-center justify-center md:justify-start">
                 <Link href="/products/eprocure/form">
                   <button className="px-6 py-2.5 bg-transparent hover:bg-white hover:text-[#F58A07] text-white border border-white rounded-md font-medium md:font-semibold">
                     Purchase Commodities

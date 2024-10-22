@@ -1,11 +1,11 @@
-// "use client";
-// import * as Yup from "yup";
-// import { ErrorMessage, Field, Form, Formik } from "formik";
-// import LoadingSpinner from "../../../../components/LoadingSpinner";
-// import { useState } from "react";
-// // import { toast } from "react-toastify";
-// import PhoneInput from "react-phone-number-input";
-// // import { addDoc, collection } from "firebase/firestore";
+"use client";
+import * as Yup from "yup";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import LoadingSpinner from "../../../../components/LoadingSpinner";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import PhoneInput from "react-phone-number-input";
+import { addDoc, collection } from "firebase/firestore";
 
 // const page = () => {
 //   const [loading, setLoading] = useState(false);
@@ -25,29 +25,29 @@
 //     setLoading(true);
 //     try {
 //       console.log("good side");
-//       //   const docRef = await addDoc(collection(db, "E-procure"), {
-//       //     email: values.email,
-//       //     name: values.name,
-//       //     phone: values.phone,
-//       //     commodity_type: values.commodity_type,
-//       //     commodity_variety: values.commodity_variety,
-//       //     quantity: values.quantity,
-//       //     delivery_location: values.delivery_location,
-//       //     expected_time_of_delivery: values.expected_time_of_delivery,
-//       //     delivery_contact_name: values.delivery_contact_name,
-//       //     delivery_contact_number: values.delivery_contact_number,
-//       //     reference: "EP" + (Math.random() + 1).toString(36).substring(7),
-//       //   })
-//       //     .then(() => {
-//       //       setLoading(false);
-//       //       toast.success("Success.");
-//       //     })
-//       //     .catch((err: any) => {
-//       //       console.log(err);
-//       //       setLoading(false);
-//       //       toast.error("Problem adding contact");
-//       //     });
-//       // console.log("Document written with ID: ", docRef.id);
+//       const docRef = await addDoc(collection(db, "E-procure"), {
+//         email: values.email,
+//         name: values.name,
+//         phone: values.phone,
+//         commodity_type: values.commodity_type,
+//         commodity_variety: values.commodity_variety,
+//         quantity: values.quantity,
+//         delivery_location: values.delivery_location,
+//         expected_time_of_delivery: values.expected_time_of_delivery,
+//         delivery_contact_name: values.delivery_contact_name,
+//         delivery_contact_number: values.delivery_contact_number,
+//         reference: "EP" + (Math.random() + 1).toString(36).substring(7),
+//       })
+//         .then(() => {
+//           setLoading(false);
+//           toast.success("Success.");
+//         })
+//         .catch((err: any) => {
+//           console.log(err);
+//           setLoading(false);
+//           toast.error("Problem adding contact");
+//         });
+//       console.log("Document written with ID: ", docRef.id);
 //     } catch (e) {
 //       setLoading(false);
 //       console.error("Error adding document: ", e);
@@ -298,9 +298,7 @@
 //   );
 // };
 
-// export default page;
-
 const page = () => {
-  return <div>This is eprocure form page</div>;
+  return <div>form</div>;
 };
 export default page;
