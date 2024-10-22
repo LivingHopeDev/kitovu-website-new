@@ -30,6 +30,13 @@ const page = () => {
                 hitting the “best product purchase” jackpot without any stress
                 at all.
               </p>
+              <div className="flex items-center md:items-start justify-center md:justify-start">
+                <Link href="/products/eprocure/form">
+                  <button className="px-6 py-2.5 hover:bg-[#F58A07] text-[#F58A07] hover:text-white border border-[#F58A07] rounded-md font-medium md:font-semibold">
+                    Purchase Commodities
+                  </button>
+                </Link>
+              </div>
             </div>
 
             <div className="row-start-1 md:col-start-2 mr-0 md:mr-8 lg:mr-24 md:rounded-[20px] overflow-hidden">
@@ -114,12 +121,11 @@ const page = () => {
                 data-driven technology.
               </h1>
               <div className="flex items-center md:items-start justify-center md:justify-start">
-                <button
-                  className="px-6 py-2.5 bg-transparent hover:bg-white hover:text-[#F58A07] text-white border border-white rounded-md font-medium md:font-semibold"
-                  onClick={() => {}}
-                >
-                  Purchase Commodities
-                </button>
+                <Link href="/products/eprocure/form">
+                  <button className="px-6 py-2.5 bg-transparent hover:bg-white hover:text-[#F58A07] text-white border border-white rounded-md font-medium md:font-semibold">
+                    Purchase Commodities
+                  </button>
+                </Link>
               </div>
             </div>
           </section>

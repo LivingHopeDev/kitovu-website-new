@@ -3,9 +3,9 @@ import * as Yup from "yup";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import LoadingSpinner from "../../../../components/LoadingSpinner";
 import { useState } from "react";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import PhoneInput from "react-phone-number-input";
-import { addDoc, collection } from "firebase/firestore";
+// import { addDoc, collection } from "firebase/firestore";
 
 const validation = Yup.object({
   name: Yup.string().required("required"),
@@ -77,7 +77,6 @@ const page = () => {
                   email: "",
                   phone: "",
                   commodity_type: "",
-                  commodity_variety: "",
                   quantity: "",
                   delivery_location: "",
                   expected_time_of_delivery: "",
@@ -111,13 +110,6 @@ const page = () => {
                           <ErrorMessage name="name" />
                         </p>
                       </div>
-
-                      {/* <div className='w-full mb-4'>
-                                                    <Field type='text' name='delivery_contact' placeholder='Delivery Contact Phone Number' className={`${errors.delivery_contact && touched.delivery_contact && "border-red-700"} rounded-[5px] px-3.5 py-2 text-gray-800 w-full border border-[#e5e7eb]`} />
-                                                    <p className="text-red-700 text-sm mt-1">
-                                                        <ErrorMessage name="delivery_contact" />
-                                                    </p>
-                                                </div> */}
 
                       <div className="signup-number mb-4 w-full">
                         <PhoneInput
@@ -260,7 +252,7 @@ const page = () => {
                         </p>
                       </div>
 
-                      <div className="signup-number mb-4 w-full">
+                      <div className="signup-number mb-4 ">
                         <PhoneInput
                           // countries={["NG", "GH", "KE"]}
                           // addInternationalOption = {false}
@@ -299,10 +291,6 @@ const page = () => {
                 )}
               </Formik>
             </div>
-          </div>
-
-          <div className="row-start-1 md:col-start-2 relative">
-            {/* <img src={image1} className="w-full" /> */}
           </div>
         </section>
       </div>
