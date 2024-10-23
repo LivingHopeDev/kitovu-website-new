@@ -48,13 +48,13 @@ const page = () => {
               />
             </div>
           </section>
-          <section className="grid md:grid-rows-2 items-center relative justify-center  mb-8 lg:mb-24">
+          <section className="grid md:grid-rows-2 items-center relative justify-center mt-4 mb-8 lg:mb-24">
             <h3 className="text-center text-2xl font-semibold">
               WHY CHOOSE US?
             </h3>
           </section>
 
-          <section className="bg-[#E5E5E54D] py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative  2xl:rounded-[20px] px-4 md:px-8 lg:px-0 ">
+          <section className="bg-[#E5E5E54D] py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative  2xl:rounded-[20px] px-4 mb-8 md:px-8 lg:px-0 ">
             <div className="w-full pr-4 md:pr-8 lg:pr-24 pl-4 md:pl-0">
               <h1 className="text-header max-w-[560px] font-semibold text-2xl md:text-3xl lg:text-4xl  mt-10">
                 Commodities at best prices
@@ -68,7 +68,7 @@ const page = () => {
             </div>
 
             <div className="row-start-1 md:col-start-1 ml-0 md:ml-8 lg:ml-24 md:rounded-[20px] overflow-hidden">
-              <div className="w-[95px] h-[95px] rounded-[20px] bg-[#F58A07] absolute top-[9rem] left-[3rem] mix-blend-multiply"></div>
+              <div className="w-[95px] h-[95px] rounded-[20px] bg-[#F58A07] absolute top-[9rem] left-0 md:left-[3rem] mix-blend-multiply"></div>
 
               <Image
                 src="/assets/images/products/eprocure3.png"
@@ -78,7 +78,7 @@ const page = () => {
               />
             </div>
           </section>
-          <section className=" py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative px-4 md:px-8 lg:px-0">
+          <section className=" py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative px-4 mb-8 md:px-8 lg:px-0">
             <div className="w-full pl-4 md:pl-8 lg:pl-24 pr-4 md:pr-0 ">
               <h1 className="text-header max-w-[560px] font-semibold text-2xl md:text-3xl lg:text-4xl mt-2">
                 Timely Delivery

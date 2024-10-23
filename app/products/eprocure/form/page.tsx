@@ -22,10 +22,10 @@ const page = () => {
     email: Yup.string().required("email required").email("Enter valid email"),
   });
 
-  const onSubmit = async (values: any, actions: any) => {
+  const onSubmit = async (values: any) => {
     setLoading(true);
     try {
-      const docRef = await addDoc(collection(db, "eProcure"), {
+      await addDoc(collection(db, "eProcure"), {
         email: values.email,
         name: values.name,
         phone: values.phone,
@@ -41,13 +41,11 @@ const page = () => {
           toast.success("Success.");
         })
         .catch((err: any) => {
-          console.log(err);
           setLoading(false);
           toast.error("Problem adding contact");
         });
     } catch (e) {
       setLoading(false);
-      console.error("Error adding document: ", e);
     }
     setTimeout(() => {
       setLoading(false);
