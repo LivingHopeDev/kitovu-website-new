@@ -8,7 +8,7 @@ import PhoneInput from "react-phone-number-input";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "@lib/firebase";
 
-interface EProcureFormValues {
+export interface EProcureFormValues {
   email: string;
   name: string;
   phone: string;
@@ -57,6 +57,7 @@ const page = () => {
           toast.error("Problem adding contact");
         });
     } catch (e) {
+      console.log("error", e);
       setLoading(false);
     }
     setTimeout(() => {
@@ -132,7 +133,7 @@ const page = () => {
                             setFieldValue("phone", event, true);
                             // setFieldValue("country", parsePhoneNumber(event).country)
                           }}
-                          onBlur={(event) => {
+                          onBlur={() => {
                             setTouched({ phone: true });
                           }}
                         />
