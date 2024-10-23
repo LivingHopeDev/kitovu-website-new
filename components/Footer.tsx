@@ -13,6 +13,13 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 import LoadingSpinner from "./LoadingSpinner";
+import { collection, addDoc } from "firebase/firestore"; // Import Firestore functions
+import { db } from "../lib/firebase";
+import { toast } from "react-toastify";
+
+interface NewsletterFormValues {
+  email: string;
+}
 
 const Footer = () => {
   const [loading, setLoading] = useState(false);
@@ -21,8 +28,24 @@ const Footer = () => {
       .email("Invalid email address")
       .required("Email Required"),
   });
-  const onSubmit = () => {
+  const onSubmit = async (
+    values: NewsletterFormValues,
+    { resetForm }: { resetForm: () => void }
+  ) => {
     setLoading(true);
+    try {
+      await addDoc(collection(db, "newsletter-subscription"), {
+        email: values.email,
+        subscribedAt: new Date(),
+      });
+
+      resetForm();
+      toast.success("Subscribed successfully!");
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      toast.error("Try again");
+    }
   };
   return (
     <footer className="footer text-white  w-screen">
