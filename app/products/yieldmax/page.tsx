@@ -35,9 +35,12 @@ const page = () => {
                   href="https://play.google.com/store/apps/details?id=kitovu.com.technology"
                   target="_blank"
                 >
-                  <img
+                  <Image
                     src="/assets/images/googleplay.png"
-                    className="w-[150px]"
+                    alt="playstore "
+                    width={150}
+                    height={150}
+                    className=" "
                   />
                 </Link>
               </div>
@@ -140,9 +143,12 @@ const page = () => {
                   href="https://play.google.com/store/apps/details?id=kitovu.com.technology"
                   target="_blank"
                 >
-                  <img
+                  <Image
                     src="/assets/images/googleplay.png"
-                    className="w-[150px]"
+                    alt="playstore "
+                    width={150}
+                    height={150}
+                    className=" "
                   />
                 </Link>
               </div>

@@ -20,7 +20,7 @@ export interface EProcureFormValues {
   delivery_contact_number: string;
 }
 
-const page = () => {
+const Page = () => {
   const [loading, setLoading] = useState(false);
   const validation = Yup.object({
     name: Yup.string().required("required"),
@@ -306,4 +306,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

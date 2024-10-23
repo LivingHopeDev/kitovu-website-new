@@ -43,6 +43,7 @@ const Footer = () => {
       toast.success("Subscribed successfully!");
       setLoading(false);
     } catch (error) {
+      console.log("error", error);
       setLoading(false);
       toast.error("Try again");
     }
