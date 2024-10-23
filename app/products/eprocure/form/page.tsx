@@ -8,6 +8,18 @@ import PhoneInput from "react-phone-number-input";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "@lib/firebase";
 
+interface EProcureFormValues {
+  email: string;
+  name: string;
+  phone: string;
+  commodity_type: string;
+  quantity: string;
+  delivery_location: string;
+  expected_time_of_delivery: string;
+  delivery_contact_name: string;
+  delivery_contact_number: string;
+}
+
 const page = () => {
   const [loading, setLoading] = useState(false);
   const validation = Yup.object({
@@ -22,7 +34,7 @@ const page = () => {
     email: Yup.string().required("email required").email("Enter valid email"),
   });
 
-  const onSubmit = async (values: any) => {
+  const onSubmit = async (values: EProcureFormValues) => {
     setLoading(true);
     try {
       await addDoc(collection(db, "eProcure"), {
@@ -40,7 +52,7 @@ const page = () => {
           setLoading(false);
           toast.success("Success.");
         })
-        .catch((err: any) => {
+        .catch(() => {
           setLoading(false);
           toast.error("Problem adding contact");
         });
@@ -265,7 +277,7 @@ const page = () => {
                             );
                             // setFieldValue("country", parsePhoneNumber(event).country)
                           }}
-                          onBlur={(event) => {
+                          onBlur={() => {
                             setTouched({ delivery_contact_number: true });
                           }}
                         />
