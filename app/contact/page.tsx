@@ -3,6 +3,9 @@ import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 import Image from "next/image";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "@lib/firebase";
+import { toast } from "react-toastify";
 
 interface FormValues {
   name: string;
@@ -21,17 +24,26 @@ const validationSchema = Yup.object({
 const ContactPage = () => {
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (
+  const handleSubmit = async (
     values: FormValues,
     { resetForm }: FormikHelpers<FormValues>
   ) => {
     setLoading(true);
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form Data", values);
-      resetForm();
+    try {
+      await addDoc(collection(db, "contact-us-form"), {
+        name: values.name,
+        email: values.email,
+        message: values.message,
+      });
       setLoading(false);
-    }, 2000);
+      toast.success("Success.");
+      resetForm();
+    } catch (error) {
+      console.log("error", error);
+
+      setLoading(false);
+      toast.error("Failed to send message.");
+    }
   };
 
   return (

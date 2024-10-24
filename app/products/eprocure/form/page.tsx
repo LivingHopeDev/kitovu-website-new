@@ -47,22 +47,15 @@ const Page = () => {
         expected_time_of_delivery: values.expected_time_of_delivery,
         delivery_contact_name: values.delivery_contact_name,
         delivery_contact_number: values.delivery_contact_number,
-      })
-        .then(() => {
-          setLoading(false);
-          toast.success("Success.");
-        })
-        .catch(() => {
-          setLoading(false);
-          toast.error("Problem adding contact");
-        });
+      });
+
+      setLoading(false);
+      toast.success("Success.");
     } catch (e) {
       console.log("error", e);
       setLoading(false);
+      toast.error("Problem adding contact");
     }
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
   };
   return (
     <div className="px-4 md:px-8 lg:px-24  pt-4 md:pt-16 flex justify-center pb-4 ">
