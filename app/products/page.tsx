@@ -16,7 +16,7 @@ const page = () => {
           <p className="text-lg text-white">Home &gt; &gt; Our Products</p>
         </div>
       </header>
-      <div className="flex justify-center">
+      <div className="flex justify-center space-y-[4rem]">
         <div className="2xl:max-w-[1600px]">
           <section className="px-4 md:px-8 lg:px-24 pt-4 md:pt-16 ">
             <div className="text-">
@@ -34,7 +34,7 @@ const page = () => {
             </div>
           </section>
           {/* YieldMax */}
-          <section className="bg-[#E5E5E54D] py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative 2xl:rounded-[20px] mb-8 lg:mb-24 px-4 md:px-8 lg:px-0 ">
+          <section className="bg-[#E5E5E54D] py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative 2xl:rounded-[20px] mb-8 lg:mb-22 px-4 md:px-8 lg:px-0 ">
             <div className="w-full pr-4 md:pr-8 lg:pr-24 pl-4 md:pl-0">
               <div className="text-[var(--orange-color)] font-semibold text-xl leading-3 py-2 px-3.5  rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-16 md:right-8 lg:right-24 md:text-2xl lg:text-3xl">
                 YieldMax
@@ -138,7 +138,7 @@ const page = () => {
             </div>
           </section>
           {/* ComboTrader */}
-          <section className=" py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative px-4 md:px-8 lg:px-0">
+          <section className=" py-4 md:py-16 grid grid-cols-1 items-center relative px-4 mt-10 md:grid-cols-2 md:gap-10  md:px-8 lg:px-0">
             <div className="w-full pl-4 md:pl-8 lg:pl-24 pr-4 md:pr-0 ">
               <div className="text-[var(--orange-color)] font-semibold text-xl leading-3 py-2 px-3.5 bg-white rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-8 md:text-2xl lg:text-3xl ">
                 ComboTrader
