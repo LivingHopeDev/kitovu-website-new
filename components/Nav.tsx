@@ -58,7 +58,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white flex justify-between items-center md:px-10 px- py-10 w-full h-10">
+    <nav className="sticky top-0 z-50 bg-white flex justify-between items-center md:px-10 px- py-10 w-full h-10 rounded-b-[10px]">
       <div>
         <Link href="/">
           <Image
