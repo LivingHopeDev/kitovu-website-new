@@ -24,27 +24,31 @@ const page = () => {
                 Our Products
               </h1>
               <p className="text-md max-w-[700px] mt-4 mb-10 text-base md:text-lg">
-                We have different packages for smallholder farmers that will
-                help them optimize their production decisions, increase their
-                yield and maximize their profits. Processors and Exporters can
-                source their products swiftly and at ease. We also got
-                individuals who wants to deal in agricultural products covered.
+                We offer different solutions and services tailored to solve the
+                food problem in Africa. From pre-planting to post-harvest. our
+                products ensure smallholder farmers have precise decision
+                making, increased yield with minimal loss and maximal profits.
+                Our product also cater to individuals, investors, financial and
+                non-financial organizations.
               </p>
             </div>
           </section>
           {/* YieldMax */}
           <section className="bg-[#E5E5E54D] py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative 2xl:rounded-[20px] mb-8 lg:mb-24 px-4 md:px-8 lg:px-0 ">
             <div className="w-full pr-4 md:pr-8 lg:pr-24 pl-4 md:pl-0">
-              <div className="text-[var(--orange-color)] text-sm leading-3 py-2 px-3.5  rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-16 md:right-8 lg:right-24">
+              <div className="text-[var(--orange-color)] font-semibold text-xl leading-3 py-2 px-3.5  rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-16 md:right-8 lg:right-24 md:text-2xl lg:text-3xl">
                 YieldMax
               </div>
-              <h1 className="text-header font-semibold text-2xl md:text-3xl lg:text-4xl mt-12">
+              <h1 className="text-header font-semibold text-2xl md:text-3xl lg:text-4xl mt-12 md:mt-[5rem]">
                 Go digital and increase your yield by taking advantage of our
                 data-based platform.
               </h1>
               <p className="text-body pt-4 pb-5">
-                Receive insights regarding your farm’s health, beneficial tips,
-                and many more personalised agronomic advisory.
+                We have different packages for smallholder farmers that will
+                help them optimize their production decisions, increase their
+                yield and maximize their profits. Processors and Exporters can
+                source their products swiftly and at ease. we also got
+                individuals who wants to deal in agricultural products covered.
               </p>
               <Link href="/products/yieldmax">
                 <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
@@ -66,18 +70,18 @@ const page = () => {
           {/* StorageX */}
           <section className=" py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative  2xl:rounded-[20px] px-4 md:px-8 lg:px-0 ">
             <div className="w-full pl-4 md:pl-8 lg:pl-24 pr-4 md:pr-0">
-              <div className="text-[var(--orange-color)] text-sm leading-3 py-2 px-3.5 bg-white rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-16 ">
+              <div className="text-[var(--orange-color)] text-xl font-semibold leading-3 py-2 px-3.5 bg-white rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-0 w-fit border-[var(--orange-color)] border relative md:absolute md:top-16 md:text-2xl lg:text-3xl">
                 StorageX
               </div>
 
-              <h1 className="text-header max-w-[560px] font-semibold text-2xl md:text-3xl lg:text-4xl mt-12">
+              <h1 className="text-header max-w-[560px] font-semibold text-2xl md:text-3xl lg:text-4xl mt-12 md:mt-[5rem]">
                 Avoid losses and cut costs on the storage of your agricultural
                 products.
               </h1>
               <p className="text-body pt-4 pb-5">
-                Take advantage of our high-tech storage facilities nationwide to
-                extend the shelf life of your product and convert them to
-                collateral assets to get loans to expand your farming business.
+                Take advantage of our high- tech storage facilities nationwide
+                to extend the shelf life of your product and convert them to
+                collateral assets to get loans ro expand your farming business.
               </p>
               <Link href="https://storagex.com.ng/" target="_blank">
                 <button className="text-[var(--orange-color)] flex  items-center  gap-2 mt-5">
@@ -99,11 +103,11 @@ const page = () => {
           {/* Eprocure */}
           <section className="bg-[#E5E5E54D] py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative  2xl:rounded-[20px] px-4 md:px-8 lg:px-0 ">
             <div className="w-full pr-4 md:pr-8 lg:pr-24 pl-4 md:pl-0">
-              <div className="text-[var(--orange-color)] text-sm leading-3 py-2 px-3.5 bg-white rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-16 md:right-8 lg:right-24">
+              <div className="text-[var(--orange-color)] font-semibold text-xl leading-3 py-2 px-3.5 bg-white rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-16 md:right-8 lg:right-24 md:text-2xl lg:text-3xl">
                 eProcure
               </div>
 
-              <h1 className="text-header max-w-[560px] font-semibold text-2xl md:text-3xl lg:text-4xl  mt-10">
+              <h1 className="text-header max-w-[560px] font-semibold text-2xl md:text-3xl lg:text-4xl mt-10 md:mt-[5rem]">
                 You never have to worry about stressing to source for
                 agricultural produce.
               </h1>
@@ -136,11 +140,11 @@ const page = () => {
           {/* ComboTrader */}
           <section className=" py-4 md:py-16 grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center relative px-4 md:px-8 lg:px-0">
             <div className="w-full pl-4 md:pl-8 lg:pl-24 pr-4 md:pr-0 ">
-              <div className="text-[var(--orange-color)] text-sm leading-3 py-2 px-3.5 bg-white rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-8 ">
+              <div className="text-[var(--orange-color)] font-semibold text-xl leading-3 py-2 px-3.5 bg-white rounded-md bg-[var(--light-orange-color)] my-5 md:my-0 md:mb-20 w-fit border-[var(--orange-color)] border relative md:absolute md:top-8 md:text-2xl lg:text-3xl ">
                 ComboTrader
               </div>
 
-              <h1 className="text-header max-w-[560px] font-semibold text-2xl md:text-3xl lg:text-4xl mt-2">
+              <h1 className="text-header max-w-[560px] font-semibold text-2xl md:text-3xl lg:text-4xl mt-2 md:mt-[5rem]">
                 Trade agricultural products on your own terms and conditions.
               </h1>
               <p className="text-body pt-4 pb-5">
