@@ -4,25 +4,35 @@ import Image from "next/image";
 const teamMembers = [
   {
     id: 1,
-    name: "John Doe",
-    image: "/assets/images/member-1.svg",
-    title: "Agriculture Expert",
-    description: "Tayo has 10+ years of experience in sustainable farming.",
+    name: "Nwachinemere Emeka ",
+    image: "/assets/images/Emeka-Nwachinemere.svg",
+    title: "(C.E.O)",
+    description:
+      "Emeka leads Kitovu with a vision to transform African agriculture. His expertise in technology and business drives innovation and growth across the company",
   },
   {
     id: 2,
-    name: "Jane Smith",
-    image: "/assets/images/member-2.svg",
-    title: "Lead Technologist",
-    description: "Jane is an expert in agri-tech innovations and automation.",
+    name: "Raheem Adedolapo",
+    image: "/assets/images/Raheem-adedolapo.png",
+    title: "(Head of Operation)",
+    description:
+      "Raheen Adedolapo is an accomploshed operations strategist dedicated to optimizing processes and enhancing agricultural value chains across Africa,",
   },
   {
     id: 3,
-    name: "Samuel Lee",
-    image: "/assets/images/member-3.svg",
-    title: "Marketing Specialist",
+    name: "Adegbola Adedotun",
+    image: "/assets/images/Adegbola-adedotun.png",
+    title: "(Head, Agronomy and GIS)",
     description:
-      "Samuel helps farmers connect with global markets effectively.",
+      "Adedotun ensures farmers get precise solutions for better productivity through his expertise in agronomy, GIS and crop management.",
+  },
+  {
+    id: 4,
+    name: "Nduka Miracle",
+    image: "/assets/images/Nduka-miracle.png",
+    title: "(Director, Rest of Africa)",
+    description:
+      "Nduka spearheads Kitovu’s expansion across Africa, bringing impactful solutions to underserved farming communities.",
   },
 ];
 
@@ -41,11 +51,11 @@ const Team = () => {
       </p>
 
       {/* Team Cards */}
-      <div className="flex flex-col md:flex-row justify-center gap-8 w-full max-w-[80%]">
+      <div className="flex flex-col md:flex-row justify-center gap-4 w-full ">
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="bg-white border-[1px] border-gray-200 rounded-md p-4 max-w-[18rem] flex flex-col items-center"
+            className="bg-white border-[1px] border-gray-200 rounded-md p-4 max-w flex flex-col items-center"
           >
             <Image
               src={member.image}
@@ -54,7 +64,7 @@ const Team = () => {
               height={100}
               className="rounded-full"
             />
-            <h3 className="text-xl font-semibold mt-4">{member.name}</h3>
+            <h3 className="text-xl font-semibold mt-4 ">{member.name}</h3>
             <p className="text-sm font-medium text-gray-600">{member.title}</p>
             <p className="text-sm text-center mt-2">{member.description}</p>
           </div>
