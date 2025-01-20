@@ -8,20 +8,39 @@ import {
 const faqs = [
   {
     id: 1,
-    question: "What does the word Kitovu means?",
-    answer: "Kitovu is a swahili word that means Hub",
+    question: "What is Kitovu Technology Company?",
+    answer:
+      "Kitovu is a technology-driven company that provides climate-smart farming and post-harvest infrastructure to help African smallholder farmers improve productivity, reduce post-harvest losses and guaranteed markets",
   },
   {
     id: 2,
-    question: "Is it accessible?",
+    question: "Where does Kitovu operate?",
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,provident nihil eaque blanditiis magni reiciendis vel doloribusmolestiae, ea facere incidunt beatae, at obcaecati voluptates atque.Sapiente voluptatibus perferendis eligendi",
+      "Headquarter in Oyo State, Nigeria. Kitovu currently operates in several African countries, focusing on regions with significant agricultural potential and underserved smallholder farmers.",
   },
   {
-    id: 2,
-    question: "Where is the Head Office?",
+    id: 3,
+    question: "How can I join Kitovu as a farmer?",
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,provident nihil eaque blanditiis magni reiciendis vel doloribusmolestiae, ea facere incidunt beatae, at obcaecati voluptates atque.Sapiente voluptatibus perferendis eligendi",
+      "Farmers can visit their nearest Farmer Service Center (FSC) or sign up online to connect with our village-based agents for guidance and onboarding.",
+  },
+  {
+    id: 4,
+    question: "What is the role of technology in Kitovu?",
+    answer:
+      "Kitovu leverages tools like Electronic Warehouse Receipts Technology to provide effective storage solutions, financing, and data-driven insights for decision-making.",
+  },
+  {
+    id: 5,
+    question: "How do i Sign up for Kitovu's services?",
+    answer:
+      "Visit any of our facilities or call +234 810 503 6403. For farmers, you can also reach out to our village-based agents at Farmer Service Centers.",
+  },
+  {
+    id: 6,
+    question: "How can i partner with Kitovu?",
+    answer:
+      "We welcome collaborations with NGOs, investors, and other organizations passionate about transforming African agriculture.",
   },
 ];
 const FAQ = () => {

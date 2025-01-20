@@ -66,6 +66,7 @@ const Nav = () => {
             alt="logo"
             width={140}
             height={140}
+            priority
           />
         </Link>
       </div>
